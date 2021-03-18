@@ -1,0 +1,27 @@
+<!-- FORMULARIO PARA CREAR NUEVAS NOTAS -->
+
+<div class="container p-5">
+    
+    <div class="col-md-4 mx-auto">
+        <div class="card text-center">
+            <div class="card-jeader">
+                <h3>Ingreso nuevo producto</h3>
+            </div>
+            <div class="card-body">
+                <form action="/productosX/add   " method="POST">
+                    <div class="form-group pb-3">
+                        <input type="text" name="title" class="form-control" placeholder="Titulo" autofocus>
+                    </div>
+                    <div class="form-group pb-3">
+                        <textarea name="descripcion" placeholder="Descripcion" class="form-control"></textarea>
+                    </div>
+                     <div class="form-group pb-3">
+                         <button class="btn btn-primary w-100">
+                             save
+                         </button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
