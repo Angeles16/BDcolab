@@ -1,0 +1,113 @@
+
+body {
+    background-color: #ffffff;
+
+}
+
+.navTop {
+    background: #412201;
+}
+
+
+
+#btnGeneric {
+    border-radius: 2em;
+    border: 1px solid black;
+    background: black;
+    color: #ffff;
+    margin-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#cafeteria {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+#navDatos li {
+    font-family: Georgia;
+}
+
+/*CARUCEL 
+.carousel-inner {
+    height: 600px;
+}
+#navPrincipal img {
+    height: 400px;
+}
+*/
+
+
+
+.imgMain {
+    height: 100%;
+    width: 100%;
+
+}
+
+/*RESPONSIVE NAVBAR*/
+@media all and (max-width: 991px){
+    #login li a{
+    margin: 0.5em;;
+    }
+}
+/*RESPONSIVE NAVBAR*/
+@media all and (max-width: 768px){
+    #collapsingNavbar3 li a{
+    margin: 0.5em;;
+    }
+}
+
+#nav-static {
+    margin:0;
+    padding:0;
+}
+
+#PruebaBorde {
+    border: 1px solid black;
+}
+
+#imgTargeta img{
+    height: 50%;
+    width: 50%;
+}
+
+
+
+footer {
+	background-color:blue;
+	height: 50%;
+  color: white;
+  padding: 15px;
+}
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
+
+#XXL {
+    background-color: red;
+}
+
+/* FOOTER */
+#imgRedes a img{
+    width: 1cm;
+    height: 1cm;
+}
+
+.iconoFooter {
+    padding-left: 15px;
+}
+
+#logoColab {
+    width: 3cm;
+    height: 3cm;
+    margin-top: 0.5cm;
+    margin-bottom: 1cm;
+}

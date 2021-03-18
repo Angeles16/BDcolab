@@ -15,20 +15,18 @@ app.engine('.hbs', exphbs({
     partialsDir: path.join(app.get('views'), 'partials' ),
     extname: '.hbs' 
 }));
-app.set('view engine', '.hbs');
+app.set('view engine', '.hbs');//motor de plantias 
 
 //middlewares
 app.use(express.urlencoded({extended: false}))
 
 //global Variables
 
-//Routes
-app.get('/',(req, res) => {
-    res.render('index');
-})
+//Rutas 
+app.use(require('./routes/index.routes'));
 
 //Static files
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 
