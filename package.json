@@ -1,7 +1,6 @@
 {
-  "name": "node-mongodb",
+  "name": "mongodb",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -25,5 +24,14 @@
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.7",
     "npm-check-updates": "^11.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angeles16/BDcolab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Angeles16/BDcolab/issues"
+  },
+  "homepage": "https://github.com/Angeles16/BDcolab#readme",
+  "description": ""
 }

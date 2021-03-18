@@ -12,4 +12,8 @@ indexCtrl.renderProductos = (req, res) => {
     res.render('productos')
 };
 
+indexCtrl.renderCarrito = (req, res) => {
+    res.render('carrito')
+};
+
 module.exports = indexCtrl;

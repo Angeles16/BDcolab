@@ -1,0 +1,105 @@
+
+body {
+    background-color: #ffffff;
+
+}
+
+.navTop {
+    background: #412201;
+}
+
+
+
+#btnGeneric {
+    border-radius: 2em;
+    border: 1px solid black;
+    background: black;
+    color: #ffff;
+    margin-right: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#cafeteria {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+#navDatos li {
+    font-family: Georgia;
+
+}
+
+
+/*CARUCEL 
+.carousel-inner {
+    height: 600px;
+}
+#navPrincipal img {
+    height: 400px;
+}
+*/
+
+#bo{
+    background: rgb(235, 235, 235);
+}
+
+.contenedor{
+    background: white;
+    margin: 3%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #999;
+    grid-template-rows: auto 100px;
+  
+} 
+.contenedor2{
+    background: white;
+    margin: 3%;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #999;
+    grid-template-rows: auto 100px;
+} 
+
+
+.item{
+    float: left;
+    margin: 3%;
+    
+    width: 350;
+    height: 250;   
+}
+#item2{
+    margin-top: 100px;
+    font-family: 'Times New Roman';
+}
+
+#item1{
+    max-width: 100%;
+    height: auto;   
+}
+#item3{
+    max-width: 100%;
+    height: auto;
+}
+
+#item4{
+    margin-top: 100px;
+    font-family: 'Times New Roman';
+}
+
+/*RESPONSIVE NAVBAR*/
+@media all and (max-width: 991px){
+    #login li a{
+    margin: 0.5em;;
+    }
+}
+/*RESPONSIVE NAVBAR*/
+@media all and (max-width: 768px){
+    #collapsingNavbar3 li a{
+    margin: 0.5em;;
+    }
+}
+.contenedor div:hover{
+
+    border: lightsalmon;
+}
