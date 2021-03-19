@@ -1,0 +1,57 @@
+.card-title{
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    color: #fff;
+    size: px;
+}
+
+.card-text{
+    position: absolute ;
+    top: 50px;
+    left: 350px;
+    right: 100px;
+    color: #fff;
+}
+.text-muted{
+    position: absolute ;
+    top: 225px;
+    left: 330px;
+    right: 10px;
+    color: gray;
+}
+
+.background{
+    position: absolute ;
+    top: 0px;
+    left: 310px;
+}
+.card-title2{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    color: #fff;
+}
+
+.card-text2{
+    position: absolute ;
+    top: -195px;
+    left: -210px;
+    right: 20px;
+    color: #fff;
+    padding: 250px;
+
+}
+.text-muted2{
+    position: absolute ;
+    top: 475px;
+    left: 650px;
+    color: gray;
+}
+
+.background2{
+    position: absolute ;
+    top: 0px;
+    left: 0px;
+    
+}

@@ -10,7 +10,7 @@ const { renderProductoForm,
 } = require('../controllers/productos.controller');
 
 //nuevo producto
-router.get('/productos/new-note', renderProductoForm)
+router.get('/productos/new-producto', renderProductoForm)
 
 router.post('/productosX/add', crearNuevoProducto)
 

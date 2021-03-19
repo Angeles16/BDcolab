@@ -22,11 +22,18 @@ app.set('view engine', '.hbs');//motor de plantias
 app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}))
 
+//app.use(flash());
+
 //global Variables
+/*app.use((req, res, next) => {
+    res.locals.error_msg = req.flash('error_msg');
+    next();
+});*/
 
 //Rutas 
 app.use(require('./routes/index.routes'));
 app.use(require('./routes/productos.routes'));
+app.use(require('./routes/user.routes'));
 
 //Static files
 app.use(express.static(path.join(__dirname, 'public')));

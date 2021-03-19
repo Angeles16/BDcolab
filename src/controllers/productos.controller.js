@@ -18,7 +18,7 @@ const Producto = require('../models/producto');
     }
 
     productoCtrl.renderEditForm = (req, res) => {
-        res.send('render edit form producto')
+        res.send('render editar formulario de producto')
     }
 
     productoCtrl.actualizarProducto = (req, res) => {
