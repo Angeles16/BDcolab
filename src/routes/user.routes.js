@@ -8,15 +8,13 @@ const { renderSignUpForm,
     logout 
 } = require('../controllers/user.controller') 
 
-router.get('/user/signup',renderSignUpForm );
+router.get('/signup',renderSignUpForm );
+router.post('/signup',signup );
 
-router.post('/user/signup',signup );
+router.get('/signin',renderSigninForm );
+router.post('/signin',signin );
 
-router.get('/user/signin',renderSigninForm );
-
-router.post('/user/signup',signin );
-
-router.get('/users/logout', logout);
+router.get('/logout', logout);
 
 
 

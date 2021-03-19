@@ -1,15 +1,6 @@
-
-
-
 <link rel="stylesheet" href="/css/estilos.css">
 
-<h1>LOGEARCE</h1>
 
-
-<br>
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -21,9 +12,9 @@
         
         <div class="formulario">
             <h2>Iniciar Sesión</h2>
-            <form action="#">
-                <input type="text" placeholder="Usuario" required>
-                <input type="password" placeholder="Contraseña" required>
+             <form action="/signin" method="POST">
+                <input type="text" name="usuario" placeholder="Usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
                 <input type="submit" value="Iniciar Sesión">
             </form>
         </div>

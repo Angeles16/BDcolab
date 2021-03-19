@@ -1,0 +1,33 @@
+
+<link rel="stylesheet" href="/css/estilos.css">
+
+ <div class="contenedor-form">
+        <div>
+            
+        </div>
+        
+        <div class="formulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="/signup" method="POST">
+                <input type="text" name="usuario" class="form-group" placeholder="Usuario" value="{{usuario}}" required>
+                
+                <input type="email" class="form-group" name="email" placeholder="Correo Electronico" value="{{email}}" required>
+
+                <input type="password" class="form-group" name="password" placeholder="Contraseña" required>
+
+                <input type="password" class="form-group" name="confirm_password" placeholder="Confirme Contraseña" required>
+                
+                <input type="text" class="form-group" name="telefono" placeholder="Telefono" value="{{telefono}}" required>
+
+                <input type="text" class="form-group" name="direccion" placeholder="Dirección" value="{{direccion}}" required>
+                
+                <input type="submit" class="form-group" value="Registrarse">
+            </form>
+        </div>
+        
+        
+       
+    </div>
+
+          <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
