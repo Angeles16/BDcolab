@@ -7,8 +7,8 @@ const Producto = require('../models/producto');
     }
 
     productoCtrl.crearNuevoProducto = async (req, res) => {
-        const {title, descripcion} = req.body;
-        const newProducto = new Producto({title, descripcion});
+        const {imagen, title, descripcion, precio, precioDescuento, cantidadStock} = req.body;
+        const newProducto = new Producto({imagen, title, descripcion, precio, precioDescuento, cantidadStock});
         await newProducto.save()
         res.send('nueva nota')
     }
