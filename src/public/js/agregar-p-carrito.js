@@ -73,11 +73,12 @@ function carritoHTML (){
 
             <td>${titulo}</td>
     
-            <td>${precio}</td> 
+            <td class="text-center">${precio}</td> 
 
-            <td>${cantidad}</td>
+            <td class="text-center">${cantidad}</td>
             <td>
-                <a href='#' class='borrar-curso' data-id='${id}'> X </a>
+                <img src="../img/delete.png" width="30" height="30" class='borrar-curso' data-id='${id}'></img>
+            
             </td>
 
 

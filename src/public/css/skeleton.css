@@ -360,8 +360,25 @@ form {
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
+  background: #FFF;
+  width: auto;
+  height: auto;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-sizing: border-box;
+  align-content: center;
+
+}
+  .full-width {
+    background: #FFF;
+    width: auto;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 2px;}
+    
 .car-width {
     margin: 20px;
     width: 200;
@@ -406,7 +423,7 @@ there.
 */
 
 
-/* Larger than mobile */
+/* Larger than mobile*/
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
@@ -419,4 +436,4 @@ there.
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {} 
