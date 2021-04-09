@@ -1,13 +1,13 @@
 const { Router } = require("express")
 const router = Router()
 
-const { renderProductoForm, 
-    crearNuevoProducto, 
-    renderProductos, 
-    renderEditForm, 
-    actualizarProducto, 
-    eliminarProduct 
-} = require('../controllers/productos.controller');
+const { renderVentasForm, 
+    crearNuevoVenta, 
+    renderVentas, 
+    renderEditFormVentas, 
+    actualizarVenta, 
+    eliminarVenta 
+} = require('../controllers/ventas.controller');
 
 //nuevo producto
 router.get('/productos/new-producto', renderProductoForm)

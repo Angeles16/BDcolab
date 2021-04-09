@@ -109,44 +109,46 @@ function totalCompra(){
     let total = 0;
 
     listProduct.forEach(curso => {
-        const {imagen, titulo, precio, cantidad, id} = curso;
-        switch (curso.id){
-            case "1":
-                contenedor = curso.cantidad * 10;
-                total=total+contenedor;
-                console.log(total);
-                break;
+        const {imagen, titulo, precio, cantidad, _id} = curso;
+
+        // switch (curso._id){
+        //     case "1":
+        //         contenedor = curso.cantidad * 10;
+        //         total=total+contenedor;
+        //         console.log(total);
+        //         break;
            
-            case "2":
-                contenedor = curso.cantidad * 15;
-                total=total+contenedor;
-                break;
-            case "3":
-                contenedor = curso.cantidad * 20;
-                total=total+contenedor;
-                break;
-            case "4":
-                contenedor = curso.cantidad * 10;
-                total=total+contenedor;
-                break;
-            case "5":
-                contenedor = curso.cantidad * 12;
-                total=total+contenedor;
-                break;
-            case "6":
-                contenedor = curso.cantidad * 5;
-                total=total+contenedor;
-                break;
-            case "7":
-                contenedor = curso.cantidad * 20;
-                total=total+contenedor;
-                break;
+        //     case "2":
+        //         contenedor = curso.cantidad * 15;
+        //         total=total+contenedor;
+        //         break;
+        //     case "3":
+        //         contenedor = curso.cantidad * 20;
+        //         total=total+contenedor;
+        //         break;
+        //     case "4":
+        //         contenedor = curso.cantidad * 10;
+        //         total=total+contenedor;
+        //         break;
+        //     case "5":
+        //         contenedor = curso.cantidad * 12;
+        //         total=total+contenedor;
+        //         break;
+        //     case "6":
+        //         contenedor = curso.cantidad * 5;
+        //         total=total+contenedor;
+        //         break;
+        //     case "7":
+        //         contenedor = curso.cantidad * 20;
+        //         total=total+contenedor;
+        //         break;
 
-        }
+        // }
 
-
-        
+ contenedor = precio*cantidad;
+ total = total+contenedor;        
     });
+    
     console.log('total es ', total);
     if(total != 0){
     document.getElementById("carrito-mensaje").innerHTML = "Total a Pagar Q "+total+".00";

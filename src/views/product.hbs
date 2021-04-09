@@ -1,6 +1,59 @@
 <link rel="stylesheet" href="css/ordprod.css">
 
-<div id="lista-productos" class="container1">
+
+
+{{!-- 
+<form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="marca">Caregoria</label>
+                    <select class="u-full-width" id="marca">
+                        <option value="">Seleccione</option>
+                        <option value="Café">Café</option>
+                        <option value="Smoothie">Smoothie</option>
+                        <option value="Crepas">Crepas</option>
+                        <option value="Paninie">Paninie</option>
+                        <option value="Desayunos">Desayunos</option>
+                        <option value="Almuerzos">Almuerzos</option>
+                        <option value="Cenas">Cenas</option>
+                        <option value="Yogurt">Yogurt</option>
+                        <option value="Frescos Naturales">Frescos Naturales</option>
+                    </select>
+                </div>
+               
+                <div class="three columns">
+                    <label for="minimo">Precio Minimo</label>
+                    <select class="u-full-width" id="minimo">
+                            <option value="">Seleccione</option>
+                            <option value="5">Q5</option>
+                            <option value="10">Q10</option>
+                            <option value="20">Q20</option>
+                            <option value="30">Q30</option>
+                            <option value="50">Q50</option>
+                            <option value="100">Q100</option>
+                            <option value="200">Q200</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Precio Maximo</label>
+                    <select class="u-full-width" id="maximo">
+                            <option value="">Seleccione</option>
+                            <option value="5">Q5</option>
+                            <option value="10">Q10</option>
+                            <option value="20">Q20</option>
+                            <option value="30">Q30</option>
+                            <option value="50">Q50</option>
+                            <option value="100">Q100</option>
+                            <option value="200">Q200</option>
+                    </select>
+                </div>
+               
+             </div>       
+                   
+               
+        </form> --}}
+
+{{!-- <div id="lista-productos" class="container1">
     <h1 id="encabezado" class="encabezado">Nuestros Productos</h1>
     <div class="row">
         <div class="four columns">
@@ -92,5 +145,44 @@
                             </div> <!--.card-->                    
             </div>
     </div>
+</div> --}}
+<div id="lista-productos">
+<div class="row">
+    {{#each arreglo}}
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" >
+                    <img src={{imagen}} class="imagenProduct u-full-width" width="200px">
+                                <div class="info-card" width="33%">
+                                      <h4 class= 'text-center titleProduct'>{{title}}</h4>
+                                      <h3 class='text-center descriptionProduct'>{{descripcion}}</h3>
+                                      <p></p>
+                                       <img src="img/estrellas.png">
+                                      <p class="precio">Q {{precio}}  <span class="u-pull-right ">{{precioDescuento}}</span></p>
+                                      <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id={{_id}}>Agregar Al Carrito</a>
+                                   </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
 </div>
+</div>
+{{!-- <nav aria-label="Page navigation example" width='100%'>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav> --}}
   <script src="js/productLocalStorage.js"></script>
+  

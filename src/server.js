@@ -34,6 +34,7 @@ app.use(express.urlencoded({extended: false}))
 app.use(require('./routes/index.routes'));
 app.use(require('./routes/productos.routes'));
 app.use(require('./routes/user.routes'));
+// app.use(require('./routes/ventas.routes'));
 
 //Static files
 app.use(express.static(path.join(__dirname, 'public')));

@@ -336,7 +336,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .u-full-width {
     width: 100%;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    
+  }
   .u-max-full-width {
     max-width: 100%;
     box-sizing: border-box; }
@@ -404,6 +406,8 @@
     text-align: center;
     border: 1px solid #e1e1e1;
     background: white;
+    height: 480px;
+  
 }
 @media (min-width: 550px) {
     .card {
@@ -485,4 +489,24 @@ body {
 }
 
 
+.info-card h3{
+  font-size: 17px;
+}
+.info-card h4{
+  font-size: 25px;
+}
 
+.titleProduct{
+height: 65px;
+}
+.descriptionProduct{
+height: 50px;  
+}
+.imagenProduct{
+width: 290px;
+height: 150px;
+position: center;
+}
+#buscador{
+  padding: 20px;
+}

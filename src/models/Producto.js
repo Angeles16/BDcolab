@@ -1,4 +1,4 @@
-const{Schema, model} = require('mongoose');
+const {Schema, model} = require('mongoose');
 
 const NoteSchema = new Schema({
     imagen: { type: String, require: true },
@@ -7,6 +7,7 @@ const NoteSchema = new Schema({
     precio: { type: String, require: true },
     precioDescuento: { type: String, require: true },
     cantidadStock: { type: String, require: true },
+    categoria: {type: String, require: true}
 }, {
     timestamps: true //cuando fue creado y cuando fue actualizado 
 })
