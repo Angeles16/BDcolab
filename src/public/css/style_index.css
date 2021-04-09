@@ -1,4 +1,4 @@
-.card-title{
+#targetasX .card-title{
     position: absolute;
     top: 10px;
     left: 350px;
@@ -6,14 +6,14 @@
     size: px;
 }
 
-.card-text{
+#targetasX .card-text{
     position: absolute ;
     top: 50px;
     left: 350px;
     right: 100px;
     color: #fff;
 }
-.text-muted{
+#targetasX .text-muted{
     position: absolute ;
     top: 225px;
     left: 330px;
